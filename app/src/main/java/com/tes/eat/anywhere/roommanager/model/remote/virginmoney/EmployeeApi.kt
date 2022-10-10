@@ -1,7 +1,7 @@
-package com.tes.eat.anywhere.roommanager.data
+package com.tes.eat.anywhere.roommanager.model.remote.virginmoney
 
-import com.tes.eat.anywhere.roommanager.data.model.people.People
-import com.tes.eat.anywhere.roommanager.data.model.room.Room
+import com.tes.eat.anywhere.roommanager.model.data.people.People
+import com.tes.eat.anywhere.roommanager.model.data.room.Room
 import retrofit2.Response
 import retrofit2.http.GET
 

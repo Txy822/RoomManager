@@ -1,10 +1,10 @@
 package com.tes.eat.anywhere.roommanager.di
 
 
-import com.tes.eat.anywhere.roommanager.data.PeopleApiDetails
-import com.tes.eat.anywhere.roommanager.data.EmployeeApi
-import com.tes.eat.anywhere.roommanager.data.NewsApi
-import com.tes.eat.anywhere.roommanager.data.NewsApiDetails
+import com.tes.eat.anywhere.roommanager.model.remote.virginmoney.PeopleApiDetails
+import com.tes.eat.anywhere.roommanager.model.remote.virginmoney.EmployeeApi
+import com.tes.eat.anywhere.roommanager.model.remote.news.NewsApi
+import com.tes.eat.anywhere.roommanager.model.remote.news.NewsApiDetails
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

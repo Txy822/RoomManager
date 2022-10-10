@@ -1,4 +1,4 @@
-package com.tes.eat.anywhere.roommanager.data.model.news
+package com.tes.eat.anywhere.roommanager.model.data.news
 
 
 import com.google.gson.annotations.SerializedName

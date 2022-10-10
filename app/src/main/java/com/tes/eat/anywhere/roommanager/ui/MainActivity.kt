@@ -1,8 +1,6 @@
-package com.tes.eat.anywhere.roommanager
+package com.tes.eat.anywhere.roommanager.ui
 
 import android.os.Bundle
-import android.view.Menu
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -11,12 +9,22 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.tes.eat.anywhere.roommanager.R
 import com.tes.eat.anywhere.roommanager.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
+    /*
+    V =view(UI, mainActivity,
+    responsiple for design
+
+     m =model,
+     handling data and business logic (API, data class or darta
+     vm= viewModel
+
+     */
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 

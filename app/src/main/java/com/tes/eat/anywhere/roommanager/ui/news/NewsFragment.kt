@@ -7,13 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.tes.eat.anywhere.roommanager.R
-import com.tes.eat.anywhere.roommanager.data.model.news.News
-import com.tes.eat.anywhere.roommanager.data.model.room.Room
+import com.tes.eat.anywhere.roommanager.model.data.news.News
 import com.tes.eat.anywhere.roommanager.databinding.FragmentNewsBinding
-import com.tes.eat.anywhere.roommanager.databinding.FragmentRoomBinding
-import com.tes.eat.anywhere.roommanager.ui.room.RoomAdapter
-import com.tes.eat.anywhere.roommanager.ui.room.RoomViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

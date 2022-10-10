@@ -1,16 +1,19 @@
 package com.tes.eat.anywhere.roommanager.ui.people
 
+import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.RequiresApi
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tes.eat.anywhere.roommanager.R
-import com.tes.eat.anywhere.roommanager.data.model.people.People
+import com.tes.eat.anywhere.roommanager.model.data.people.People
 import com.tes.eat.anywhere.roommanager.databinding.FragmentPeopleBinding
+import com.tes.eat.anywhere.roommanager.util.NetworkUtil
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint  // make sure it is also set in Activity
@@ -26,6 +29,7 @@ class PeopleFragment : Fragment(R.layout.fragment_people) {
 //    @Inject  // make sure the AndroidEntryPoint is set
 //    lateinit var api: EmployeeApi
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -38,7 +42,10 @@ class PeopleFragment : Fragment(R.layout.fragment_people) {
 
             setupUI(it)
         }
-        //setupUI(it)
+        //utils to check network and android version
+        if(NetworkUtil.isOnline(requireContext())){
+            viewModel.getPeople()
+        }
         // call the API for result
         viewModel.getPeople()
 

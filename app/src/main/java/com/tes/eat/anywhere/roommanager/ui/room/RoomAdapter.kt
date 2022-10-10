@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.tes.eat.anywhere.roommanager.R
-import com.tes.eat.anywhere.roommanager.data.model.room.Room
-import com.tes.eat.anywhere.roommanager.data.model.room.RoomItem
+import com.tes.eat.anywhere.roommanager.model.data.room.Room
+import com.tes.eat.anywhere.roommanager.model.data.room.RoomItem
 import com.tes.eat.anywhere.roommanager.databinding.ItemRoomBinding
 
 class RoomAdapter(

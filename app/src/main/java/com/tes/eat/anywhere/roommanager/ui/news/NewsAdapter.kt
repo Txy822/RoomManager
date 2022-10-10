@@ -5,8 +5,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tes.eat.anywhere.roommanager.R
-import com.tes.eat.anywhere.roommanager.data.model.news.Article
-import com.tes.eat.anywhere.roommanager.data.model.news.News
+import com.tes.eat.anywhere.roommanager.model.data.news.Article
+import com.tes.eat.anywhere.roommanager.model.data.news.News
 import com.tes.eat.anywhere.roommanager.databinding.ItemNewsBinding
 
 

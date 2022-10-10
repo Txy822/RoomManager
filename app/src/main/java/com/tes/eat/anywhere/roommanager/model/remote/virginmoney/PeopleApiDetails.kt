@@ -1,4 +1,4 @@
-package com.tes.eat.anywhere.roommanager.data
+package com.tes.eat.anywhere.roommanager.model.remote.virginmoney
 
 
 object PeopleApiDetails {
