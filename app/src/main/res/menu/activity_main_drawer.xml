@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/subtitle"
+            android:title="Manage Rooms">
+            <menu>
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/home"
+                    android:title="@string/menu_home" />
+                <item
+                    android:id="@+id/nav_people"
+                    android:icon="@drawable/people"
+                    android:title="People" />
+                <item
+                    android:id="@+id/nav_room"
+                    android:icon="@drawable/rooms"
+                    android:title="Rooms" />
+            </menu>
+        </item>
+    </group>
+    <group
+        android:id="@+id/group4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/subtitle4"
+            android:title="News Updates">
+            <menu>
+                <item
+                    android:id="@+id/nav_news"
+                    android:icon="@drawable/news"
+                    android:title="News" />
+            </menu>
+        </item>
+    </group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/subtitle2"
+            android:title="Account">
+            <menu>
+                <item
+                    android:id="@+id/item4"
+                    android:icon="@drawable/setting"
+                    android:title="Setting" />
+
+                <item
+                    android:id="@+id/item5"
+                    android:icon="@drawable/login"
+                    android:title="Login" />
+            </menu>
+        </item>
+    </group>
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/subtitle3"
+            android:title="Follow us">
+            <menu>
+                <item
+                    android:id="@+id/item6"
+                    android:icon="@drawable/twitter"
+                    android:title="Twitter" />
+
+                <item
+                    android:id="@+id/item7"
+                    android:icon="@drawable/instagram"
+                    android:title="Instagram" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

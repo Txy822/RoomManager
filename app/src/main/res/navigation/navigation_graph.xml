@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.tes.eat.anywhere.roommanager.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_detail"
+        android:name="com.tes.eat.anywhere.roommanager.ui.people.PersonDetailFragment"
+        android:label="Person's Detail"
+        tools:layout="@layout/fragment_person_detail" />
+    <fragment
+        android:id="@+id/nav_room"
+        android:name="com.tes.eat.anywhere.roommanager.ui.room.RoomFragment"
+        android:label="Rooms"
+        tools:layout="@layout/fragment_room" />
+
+    <fragment
+        android:id="@+id/nav_people"
+        android:name="com.tes.eat.anywhere.roommanager.ui.people.PeopleFragment"
+        android:label="List of People"
+        tools:layout="@layout/fragment_people" >
+        <action
+            android:id="@+id/action_peopleFragment_to_detailFragment"
+            app:destination="@id/nav_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.tes.eat.anywhere.roommanager.ui.news.NewsFragment"
+        android:label="News"
+        tools:layout="@layout/fragment_news" />
+</navigation>
