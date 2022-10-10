@@ -39,7 +39,6 @@ class PeopleFragment : Fragment(R.layout.fragment_people) {
 
         // observe the changes in viewmodel liveData
         viewModel.people.observe(viewLifecycleOwner) {
-
             setupUI(it)
         }
         //utils to check network and android version
