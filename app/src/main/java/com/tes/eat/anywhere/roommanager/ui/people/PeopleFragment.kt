@@ -58,9 +58,7 @@ class PeopleFragment : Fragment(R.layout.fragment_people) {
                 peopleList
             ) {item->
 
-
                 viewModel.currentData=item
-                //if the second parameter it mpve ot the function
 //                findNavController().navigate(R.id.action_peopleFragment_to_detailFragment, bundleOf(Pair("FName", item.f)))
                 findNavController().navigate(R.id.action_peopleFragment_to_detailFragment)
             }
